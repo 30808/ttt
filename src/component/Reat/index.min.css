@@ -1,0 +1,1 @@
+.wrap{display:flex}.wrap i{display:block;width:20px;height:20px;background:#ccc;margin-left:10px}.wrap i.hover{background-color:aqua !important}.wrap i.hover ~ i{background-color:#ccc}.wrap i.active{background-color:aqua}

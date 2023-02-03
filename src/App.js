@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
+import Tap from './Tap'
+import Reat from './component/Reat'
+import './tap.css'
+import './reset.css'
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends React.Component {
+  state = {
+    activeTap: 'a'
+  }
+  changeTap = (Tap) => {
+    this.setState({
+      activeTap: Tap
+    })
+  }
+  render() {
+    return (
+      <>
+      <div className="App">
+          <Tap activeTap={this.state.activeTap} onChangeTap={this.changeTap} />
+          {this.state.activeTap === 'a' && <h2>啦啦啦</h2>}
+          {this.state.activeTap === 'b' && <h2>突突突</h2>}
+          {this.state.activeTap === 'c' && <h2>嗷嗷嗷</h2>}
+      </div>
+      <Reat count={9}></Reat>
+      </>
+    );
+  }
 }
+
 
 export default App;

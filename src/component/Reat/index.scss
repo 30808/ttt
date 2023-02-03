@@ -1,0 +1,19 @@
+.wrap {
+	display: flex;
+	i {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: #ccc;
+		margin-left: 10px;
+		&.hover {
+			background-color: aqua !important;
+			& ~ i {
+				background-color: #ccc;
+			}
+		}
+		&.active {
+			background-color: aqua;
+		}
+	}
+}

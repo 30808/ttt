@@ -1,0 +1,13 @@
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: blue;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
