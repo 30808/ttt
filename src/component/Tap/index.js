@@ -1,5 +1,6 @@
 // import React from 'react'
 import PropTypes from 'prop-types'
+import './index.css'
 
 const generateCls = (active, current) => {
 	return current === active ? 'nav-link active' : 'nav-item'

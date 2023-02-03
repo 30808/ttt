@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 // import './App.css';
-import Tap from './Tap'
+import Tap from './component/Tap'
 import Reat from './component/Reat'
-import './tap.css'
+import Number from './component/Number'
+// import Button from './component/Button'
 import './reset.css'
 import React from 'react';
 
@@ -10,7 +11,8 @@ import React from 'react';
 
 class App extends React.Component {
   state = {
-    activeTap: 'a'
+    activeTap: 'a',
+    num: 0
   }
   changeTap = (Tap) => {
     this.setState({
@@ -27,6 +29,8 @@ class App extends React.Component {
           {this.state.activeTap === 'c' && <h2>嗷嗷嗷</h2>}
       </div>
       <Reat count={10}></Reat>
+      <Number></Number>
+      {/* <Button type=""></Button> */}
       </>
     );
   }
