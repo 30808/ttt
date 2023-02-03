@@ -26,7 +26,7 @@ class App extends React.Component {
           {this.state.activeTap === 'b' && <h2>突突突</h2>}
           {this.state.activeTap === 'c' && <h2>嗷嗷嗷</h2>}
       </div>
-      <Reat count={9}></Reat>
+      <Reat count={10}></Reat>
       </>
     );
   }
