@@ -1,0 +1,19 @@
+ul {
+  .lll{
+    width:100px;
+    height: 30px;
+    background-color: #ccc;
+    display: block;
+  }
+  .ttt{
+    width:100px;
+    height: 105px;
+    background-color: #ccc;
+    display: none;
+    span {
+      display: block;
+      height: 30px;
+      margin-top: 5px;
+    }
+  }
+}

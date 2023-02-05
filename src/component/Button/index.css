@@ -5,3 +5,11 @@
   border: 1px solid #ccc;
   margin-right: 10px;
 }
+
+.wrap button.bb {
+  background-color: aqua;
+}
+
+.wrap button.cc {
+  background-color: darkblue;
+}

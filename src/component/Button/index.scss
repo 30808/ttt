@@ -5,5 +5,11 @@
 		background-color: red;
 		border: 1px solid #ccc;
 		margin-right: 10px;
+		&.bb {
+			background-color: aqua;
+		}
+		&.cc {
+			background-color: darkblue;
+		}
 	}
 }

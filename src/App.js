@@ -1,11 +1,13 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import Tap from './component/Tap'
 import Reat from './component/Reat'
 import Number from './component/Number'
-// import Button from './component/Button'
 import './reset.css'
 import React from 'react';
+import Switch from './component/Switch'
+import Eject from './component/Eject'
+import Fold from './component/Fold'
 
 
 
@@ -30,7 +32,9 @@ class App extends React.Component {
       </div>
       <Reat count={10}></Reat>
       <Number></Number>
-      {/* <Button type=""></Button> */}
+      <Switch></Switch>
+      <Eject></Eject>
+      <Fold></Fold>
       </>
     );
   }
